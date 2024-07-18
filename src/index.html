@@ -1,2 +1,33 @@
-Hello IRCITE2024
-<img src="logo.png" height="350px"/>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mythical Creatures Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <div id="quiz">
+            <h1>Mythical Creatures Quiz</h1>
+            <div id="question-container">
+                <p id="question">Question will go here</p>
+                <img id="creature-image" src="" alt="Creature Image">
+            </div>
+            <div id="answer-buttons" class="button-container">
+                <!-- Answer buttons will be added here dynamically -->
+            </div>
+            <div id="navigation-buttons" class="button-container">
+                <button id="prev-button" class="nav-button" onclick="prevQuestion()">Previous</button>
+                <button id="next-button" class="nav-button" onclick="nextQuestion()">Next</button>
+                <button id="submit-button" class="nav-button" onclick="submitQuiz()">Submit</button>
+            </div>
+            <div id="result-container" class="result-container hidden">
+                <h2 id="result-message"></h2>
+                <button onclick="restartQuiz()">Restart Quiz</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
